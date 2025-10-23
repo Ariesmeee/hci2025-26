@@ -8,17 +8,19 @@
 </head>
 <body>
   <header>
-    <h1>Meine To-Do-Demo</h1>
-    <p>Simpel. Aber funktioniert ... bald</p>
+    <h1>To-Do-Demo</h1>
   </header>
 
   <main>
     <section id="input-section">
-      <!-- Eingabefeld und Button von Ihnen ergänzen -->
+      <form id="task-form" aria-label="Aufgabe hinzufügen">
+        <input type="text" id="new-task" name="new-task" placeholder="Enter new task" autocomplete="off" />
+        <button type="submit" id="add-task-btn">+ Add</button>
+      </form>
     </section>
 
     <section id="list-section">
-      <h2>Aufgabenliste</h2>
+      <h2>My Tasks</h2>
       <ul id="todo-list">
         <!-- Aufgaben erscheinen hier -->
       </ul>

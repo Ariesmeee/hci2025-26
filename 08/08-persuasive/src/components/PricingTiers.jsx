@@ -114,14 +114,6 @@ Willkommen im exklusiven Club der Mars-Pioniere! 🎉`)
           ))}
         </div>
         
-        <div className="guarantee">
-          <p>
-            🛡️ <strong>100% Geld-zurück-Garantie</strong> - Falls wir Sie nicht zum Mars bringen können, volle Rückerstattung garantiert
-          </p>
-          <p className="guarantee-details">
-            ✈️ Kostenlose Stornierung bis 30 Tage vor Start | 🔒 Sichere Zahlungsabwicklung
-          </p>
-        </div>
       </div>
     </div>
   )

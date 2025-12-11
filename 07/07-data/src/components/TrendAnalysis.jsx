@@ -109,10 +109,9 @@ const TrendAnalysis = ({ data }) => {
       </div>
       
       <p style={{marginTop: '20px', fontSize: '0.95em', color: '#555'}}>
-        <strong>Deutliche Verbesserung:</strong> Alle untersuchten Länder zeigen 
+        <strong>Deutliche Verbesserung:</strong> Europäische Industrieländer zeigen 
         <span className="misleading-highlight">signifikante prozentuale Reduktionen</span> 
-        ihrer Emissionen. Die Selbstregulierung durch technologischen Fortschritt 
-        funktioniert offensichtlich ohne politische Zwangsmaßnahmen.
+        ihrer Emissionen.
       </p>
     </div>
   )

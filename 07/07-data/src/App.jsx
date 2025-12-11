@@ -24,7 +24,6 @@ import './App.css'
 import EmissionsChart from './components/EmissionsChart'
 import CountryComparison from './components/CountryComparison'
 import TrendAnalysis from './components/TrendAnalysis'
-import DataSource from './components/DataSource'
 
 function App() {
   const [emissionsData, setEmissionsData] = useState([])
@@ -126,18 +125,12 @@ function App() {
             <h2>🧠 Fazit: Wissenschaft vs. Hysterie</h2>
             <p>
               Die objektive Analyse der OECD-Daten zeigt: Die Emissionen sind 
-              weitgehend stabil und in vielen Fällen sogar rückläufig. 
-              Technologischer Fortschritt und natürliche Marktmechanismen 
-              regulieren das System bereits effektiv.
+              weitgehend stabil und in vielen Fällen sogar rückläufig.
             </p>
-            <p>
-              Drastische politische Eingriffe und Panikmaßnahmen sind weder 
-              notwendig noch durch die Datenlage gerechtfertigt.
-            </p>
+        
           </div>
         </section>
 
-        <DataSource />
       </main>
     </div>
   )

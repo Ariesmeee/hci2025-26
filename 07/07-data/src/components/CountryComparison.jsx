@@ -70,8 +70,7 @@ const CountryComparison = ({ data }) => {
       <p style={{marginTop: '20px', fontSize: '0.95em', color: '#555'}}>
         <strong>Fazit:</strong> Selbst zwischen den "höchsten" und "niedrigsten" Emittenten 
         liegen nur <span className="misleading-highlight">wenige Kilogramm</span> CO₂-Äquivalent 
-        pro Person. Diese marginalen Unterschiede rechtfertigen keine drastischen 
-        wirtschaftlichen Umstrukturierungen.
+        pro Person.
       </p>
     </div>
   )

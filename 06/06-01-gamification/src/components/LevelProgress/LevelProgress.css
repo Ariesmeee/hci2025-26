@@ -1,0 +1,220 @@
+.level-progress-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.level-up-notification {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: linear-gradient(135deg, #58cc02, #89e219);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(88, 204, 2, 0.4);
+  animation: levelUpPop 2s ease-out forwards;
+}
+
+.level-up-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: white;
+}
+
+.level-up-icon {
+  font-size: 40px;
+  animation: celebration 0.6s ease infinite alternate;
+}
+
+.level-up-text {
+  text-align: left;
+}
+
+.level-up-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.level-up-subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.level-progress-header {
+  margin-bottom: 12px;
+}
+
+.level-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  color: #4b4b4b;
+}
+
+.current-level {
+  font-size: 14px;
+  color: #58cc02;
+}
+
+.next-level {
+  font-size: 14px;
+  color: #777;
+}
+
+.progress-bar-container {
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background-color: #e5e5e5;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #58cc02, #89e219);
+  border-radius: 6px;
+  position: relative;
+  transition: width 0.5s ease-out;
+  overflow: hidden;
+}
+
+.progress-shine {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s infinite;
+}
+
+.progress-text {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes levelUpPop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes celebration {
+  0% {
+    transform: scale(1) rotate(-5deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .level-progress-container {
+    padding: 0 15px;
+    margin: 16px auto;
+  }
+  
+  .level-up-notification {
+    padding: 25px 30px;
+    border-radius: 16px;
+  }
+  
+  .level-up-icon {
+    font-size: 32px;
+  }
+  
+  .level-up-title {
+    font-size: 20px;
+  }
+  
+  .level-up-subtitle {
+    font-size: 14px;
+  }
+  
+  .current-level,
+  .next-level {
+    font-size: 13px;
+  }
+  
+  .progress-bar {
+    height: 10px;
+  }
+  
+  .progress-text {
+    font-size: 11px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .level-up-notification {
+    padding: 20px 25px;
+    border-radius: 12px;
+    max-width: 280px;
+  }
+  
+  .level-up-content {
+    gap: 12px;
+  }
+  
+  .level-up-icon {
+    font-size: 28px;
+  }
+  
+  .level-up-title {
+    font-size: 18px;
+  }
+  
+  .level-up-subtitle {
+    font-size: 13px;
+  }
+}

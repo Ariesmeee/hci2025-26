@@ -28,7 +28,7 @@ Diese Visualisierung zeigt verschiedene Manipulationstechniken, mit denen Betrac
 - Lässt den Kontext zu globalen Emissionen und Temperaturdaten außer Acht
 
 ## 📚 Bildungszweck
-Die Schüler sollten diese Techniken identifizieren und eine „White Hat“-Version erstellen, die:
+Aufgabe ist es, eine „White Hat“-Version erstellen, die:
 - vollständige, ungefilterte Daten zeigt
 - angemessene Skalen verwendet, die bei Null beginnen
 - den richtigen Kontext und längere Zeiträume einbezieht
